@@ -59,7 +59,7 @@
                             id="form1"
                             min="0"
                             name="quantity"
-                            value="1"
+                            value="0"
                             type="number"
                             class="form-control form-control-sm"
                           />
@@ -109,7 +109,7 @@
                             id="form2"
                             min="0"
                             name="quantity"
-                            value="1"
+                            value="0"
                             type="number"
                             class="form-control form-control-sm"
                           />
@@ -159,7 +159,7 @@
                             id="form3"
                             min="0"
                             name="quantity"
-                            value="1"
+                            value="0"
                             type="number"
                             class="form-control form-control-sm"
                           />
@@ -200,32 +200,33 @@
 
                       <div class="d-flex justify-content-between mb-4">
                         <h5 class="text-uppercase">items 3</h5>
-                        <h5>$<span id="subtotal-items">137.00</span></h5>
+                        <h5>$<span id="subtotal-items">0.00</span></h5>
                       </div>
 
                       <h5 class="text-uppercase mb-3">Payment</h5>
 
                       <div class="mb-4 pb-2">
-                        <select class="select">
+                        <select class="select" id="payment">
                           <option value="1">Money</option>
                           <option value="2">Pix</option>
+                          <option value="3">Other</option>
                         </select>
                       </div>
 
                       <hr class="my-4" />
                       <div class="d-flex justify-content-between mb-5">
                         <h6 class="text-uppercase">Shipping</h6>
-                        <h6>$<span>10.00</span></h6>
+                        <h6>$<span id="shipping">10.00</span></h6>
                       </div>
 
                       <div class="d-flex justify-content-between mb-5">
                         <h6 class="text-uppercase">Tax</h6>
-                        <h6>$<span>5.00</span></h6>
+                        <h6>$<span id="tax">5.00</span></h6>
                       </div>
 
                       <div class="d-flex justify-content-between mb-5">
                         <h5 class="text-uppercase">Total price</h5>
-                        <h5>$<span id="total-items">137.00</span></h5>
+                        <h5>$<span id="total-items">0.00</span></h5>
                       </div>
 
                       <button
@@ -235,6 +236,17 @@
                       >
                         Register
                       </button>
+                    </div>
+                    <div class="card">
+                      <div class="card-body">
+                        <h5>Discount</h5>
+                        <ul>
+                          <li>Money: 10%</li>
+                          <li>Pix: 5%</li>
+                          <li>More $200,00: 5%</li>
+                        </ul>
+                       
+                      </div>
                     </div>
                   </div>
                 </div>
