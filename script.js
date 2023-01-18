@@ -49,11 +49,11 @@ const totalItems = () => {
   let paymentOption = payment.options[payment.selectedIndex].text;
   switch (paymentOption) {
     case "Money":
-        return subTotalItems > 200 ? ((subTotalItems() + shipping + tax) * 0.9).toFixed(2): ((subTotalItems() + shipping + tax) * 0.85).toFixed(2)
+        return subTotalItems < 200 ? ((subTotalItems() + shipping + tax) * 0.9).toFixed(2): ((subTotalItems() + shipping + tax) * 0.85).toFixed(2)
       
       break;
     case "Pix":
-        return subTotalItems > 200 ? ((subTotalItems() + shipping + tax) * 0.95).toFixed(2): ((subTotalItems() + shipping + tax) * 0.90).toFixed(2)
+        return subTotalItems < 200 ? ((subTotalItems() + shipping + tax) * 0.95).toFixed(2): ((subTotalItems() + shipping + tax) * 0.90).toFixed(2)
       break;
     default:
       return (subTotalItems() + shipping + tax).toFixed(2);
